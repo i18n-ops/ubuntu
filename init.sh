@@ -47,6 +47,8 @@ rsync -avu _/ /
 ./sh/end.sh
 
 cd $DIR
+./sysctl.sh
+./rc.local.sh
 ./chrony.sh
 ./docker.sh
 [ $CN ] && ./cn.sh
